@@ -1,0 +1,57 @@
+test_color_name_to_hex (__main__.TestExercice) ... FAIL
+test_compute_mse (__main__.TestExercice) ... FAIL
+test_create_list (__main__.TestExercice) ... FAIL
+test_list_to_dict (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_color_name_to_hex (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:/University Polytechnique/Automne 2021/INF1007/Exercices/c03-ch6-2-exercices-JordanLow682/test_exercice.py", line 36, in test_color_name_to_hex
+    self.assertEqual(
+AssertionError: Lists differ: [[], []] != [[('blue', '#0000FF'), ('red', '#FF0000'), [172 chars]A')]]
+
+First differing element 0:
+[]
+[('blue', '#0000FF'), ('red', '#FF0000'), [83 chars]FF')]
+
+- [[], []]
++ [[('blue', '#0000FF'),
++   ('red', '#FF0000'),
++   ('green', '#008000'),
++   ('yellow', '#FFFF00'),
++   ('black', '#000000'),
++   ('white', '#FFFFFF')],
++  [('orange', '#FFA500'),
++   ('blue', '#0000FF'),
++   ('red', '#FF0000'),
++   ('brown', '#A52A2A')]] : Mauvaise reponse
+
+======================================================================
+FAIL: test_compute_mse (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:/University Polytechnique/Automne 2021/INF1007/Exercices/c03-ch6-2-exercices-JordanLow682/test_exercice.py", line 62, in test_compute_mse
+    self.assertDictEqual(
+AssertionError: {} != {'LR': 220.6, 'DNN': 14.0, 'RF': 1681.8}
+- {}
++ {'DNN': 14.0, 'LR': 220.6, 'RF': 1681.8} : Erreur dans le calcul des MSE
+
+======================================================================
+FAIL: test_create_list (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:/University Polytechnique/Automne 2021/INF1007/Exercices/c03-ch6-2-exercices-JordanLow682/test_exercice.py", line 48, in test_create_list
+    self.assertListEqual(
+AssertionError: Lists differ: [] != [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,[57248 chars]9999]
+
+Second list contains 9664 additional elements.
+First extra element 0:
+0
+
+Diff is 86292 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.068s
+
+FAILED (failures=3)
